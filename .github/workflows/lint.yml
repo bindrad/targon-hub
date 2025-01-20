@@ -1,12 +1,9 @@
 name: Build and Test Next.js with Bun
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     branches:
-      - '**'
+      - 'main'
 
 jobs:
   build:
