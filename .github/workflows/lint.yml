@@ -24,7 +24,8 @@ jobs:
     - name: Set up .env
       run: |
         #!/bin/bash
-        export SKIP_ENV_VALIDATION=True
+        echo "SKIP_ENV_VALIDATION=True" >> $GITHUB_ENV
+        
 
     - name: Print env var
       run: |
